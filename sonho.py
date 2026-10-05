@@ -56,10 +56,18 @@ def coletar(desde):
     return sorted(falas, key=lambda x: x["ts"])
 
 
+def hora_local(ts):
+    """As conversas guardam a hora em UTC; o modelo anotava "16:18" pra algo feito às 13:18 daqui. Vai na hora local."""
+    try:
+        return datetime.datetime.fromisoformat(ts.replace("Z", "+00:00")).astimezone().strftime("%Y-%m-%d %H:%M")
+    except ValueError:
+        return ts[:16].replace("T", " ")
+
+
 def pedacos(falas):
     atual, tam = [], 0
     for f in falas:
-        linha = f"[{f['ts'][:16].replace('T', ' ')} UTC · {f['maq']}/{f['proj'][-30:]}] {NOME.get(f['quem'], f['quem'])}: {f['texto']}"
+        linha = f"[{hora_local(f['ts'])} · {f['maq']}/{f['proj'][-30:]}] {NOME.get(f['quem'], f['quem'])}: {f['texto']}"
         if tam + len(linha) > PEDACO and atual:
             yield "\n".join(atual)
             atual, tam = [], 0

@@ -239,6 +239,16 @@ class Recompensa(Base):
         self.assertTrue(casos[0]["depois"][1].endswith("boa, voltou"))
 
 
+class Conversa(unittest.TestCase):
+    def test_hora_da_fala_vai_na_hora_local(self):
+        utc = datetime.datetime(2026, 1, 10, 16, 18, tzinfo=datetime.timezone.utc)
+        self.assertEqual(sonho.hora_local("2026-01-10T16:18:00.000Z"), utc.astimezone().strftime("%Y-%m-%d %H:%M"))
+        self.assertEqual(sonho.hora_local("sem data"), "sem data")
+        linha = next(sonho.pedacos([{"ts": "2026-01-10T16:18:00.000Z", "maq": "m", "proj": "p", "quem": "pessoa", "texto": "oi"}]))
+        self.assertNotIn("UTC", linha)
+        self.assertIn(utc.astimezone().strftime("%H:%M"), linha)
+
+
 class Coleta(Base):
     def test_medir_e_preencher(self):
         c = coleta.Coleta()
