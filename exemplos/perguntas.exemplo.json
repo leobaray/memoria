@@ -1,0 +1,18 @@
+[
+ {
+  "id": "servidor-ip",
+  "pergunta": "qual o ip do servidor de arquivos?",
+  "certo": ["192\\.168\\.0\\.10\\b"],
+  "errado": ["192\\.168\\.1\\.10\\b"],
+  "fonte": "lido no próprio servidor (ip addr)",
+  "conferido": "2026-01-10"
+ },
+ {
+  "id": "impressora-nao-imprime",
+  "pergunta": "a impressora da sala não imprime",
+  "certo": ["fila", "porta tcp"],
+  "errado": [],
+  "fonte": "caso resolvido em 05/01, conferido imprimindo uma página",
+  "conferido": "2026-01-10"
+ }
+]
