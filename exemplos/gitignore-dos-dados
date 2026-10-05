@@ -1,0 +1,6 @@
+# .gitignore da pasta dos DADOS (se você der `git init` nela pra ter o histórico das fichas)
+# cache que se recalcula sozinho
+embeds.json
+# logs, ponteiros e cópias de antes de cada sonho
+estado/
+__pycache__/

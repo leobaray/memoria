@@ -1,0 +1,12 @@
+{
+ "dono": "Maria",
+ "assistente": "Claude",
+ "quem_sou": "o assistente que cuida da infra do escritório da Maria",
+ "ficha_do_dono": "",
+ "rotulo": "",
+ "claude": {"comando": "claude", "modelo": "opus"},
+ "conversas": [{"maquina": "servidor"}],
+ "sentido": null,
+ "regua": {"honcho": null},
+ "depois_do_sonho": []
+}

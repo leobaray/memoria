@@ -1,0 +1,7 @@
+# Agendamentos da memória (crontab -e). Nada fica rodando: cada programa roda, grava e sai.
+# Ajuste /caminho/memoria. O estado e os logs ficam em <dados>/estado (veja com: python3 mem.py onde).
+M=/caminho/memoria
+30 3 * * *    cd $M && python3 sonho.py  >> "$(python3 mem.py onde)/estado/sonho.log"  2>&1; ./salvar_git.sh "sonho da madrugada"
+10 4 * * *    cd $M && python3 regua.py  >> "$(python3 mem.py onde)/estado/regua.log"  2>&1; ./salvar_git.sh "régua da noite"
+30 9,14 * * * cd $M && python3 coleta.py >> "$(python3 mem.py onde)/estado/coleta.log" 2>&1; ./salvar_git.sh "coleta automática"
+5 * * * *     cd $M && ./salvar_git.sh "anotações do dia"
