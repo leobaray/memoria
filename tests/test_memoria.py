@@ -104,6 +104,17 @@ class Puxar(Base):
         self.assertEqual(mem.por_assunto(linhas, mem.fortes_de("quantos encaixes tem?"))[0], "- encaixes de memória: 2")
         self.assertEqual(mem.por_assunto(linhas, set()), linhas)
 
+    def test_caso_do_assunto_sobe_pra_antes_dos_campos(self):
+        ficha("caso-a", "caso", resumo="Impressora parou depois da troca do roteador", jeito_certo=["refazer a porta"],
+              ligacoes=[["impressora-sala", "aconteceu em"]])
+        ficha("caso-b", "caso", resumo="Toner acabou", ligacoes=[["impressora-sala", "aconteceu em"]])
+        todos = mem.itens()
+        b = mem.bloco(todos, "impressora-sala", fortes=mem.fortes_de("trocaram o roteador e ela parou")).splitlines()
+        self.assertLess(next(i for i, l in enumerate(b) if "troca do roteador" in l), next(i for i, l in enumerate(b) if l.startswith("- ip:")))
+        self.assertGreater(next(i for i, l in enumerate(b) if "Toner acabou" in l), next(i for i, l in enumerate(b) if l.startswith("- ip:")))
+        sem = mem.bloco(todos, "impressora-sala").splitlines()   # sem assunto: tudo no lugar de sempre
+        self.assertGreater(next(i for i, l in enumerate(sem) if "troca do roteador" in l), next(i for i, l in enumerate(sem) if l.startswith("- ip:")))
+
     def test_duvida_aparece_com_a_ficha(self):
         sonho.aplicar({"op": "duvida", "id": "impressora-sala", "texto": "Ela é colorida?"})
         self.assertIn("Ela é colorida?", puxar("a impressora da sala", MEM_TESTE="1"))

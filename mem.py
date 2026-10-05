@@ -182,10 +182,16 @@ def bloco(todos, iid, completo=True, desfazer=False, fortes=None):
         linhas.append("Regra geral que saiu de casos como este:")
         linhas += [f"  - {todos[o]['resumo']} (de {len(todos[o].get('ligacoes', []))} casos; `{o}`)" for o in licoes]
     if casos:
-        linhas.append("Já aconteceu (e já sei resolver):")
-        for o, _ in casos:
-            jc = todos[o].get("jeito_certo") or [""]
-            linhas.append(f"  - {todos[o]['resumo']} → {jc[0]} (`{o}`)")
+        ja = [f"  - {todos[o]['resumo']} → {(todos[o].get('jeito_certo') or [''])[0]} (`{o}`)" for o, _ in casos]
+        # caso que fala do assunto da mensagem sobe pra logo depois do resumo: numa ficha grande, o corte do pacote
+        # levava embora justamente o problema já resolvido (achado pela régua em 05/10/2026)
+        do_assunto = [l for l in ja if fortes and fortes & set(re.findall(r"[a-z0-9]{4,}", norm(l)))]
+        if do_assunto:
+            linhas[2:2] = ["Já aconteceu parecido (e já sei resolver):"] + do_assunto
+        resto = [l for l in ja if l not in do_assunto]
+        if resto:
+            linhas.append("Já aconteceu (e já sei resolver):")
+            linhas += resto
     if mudancas and it["tipo"] != "mudanca":
         linhas.append(f"O que eu já mexi aqui ({len(mudancas)}; as últimas):")
         for o in mudancas[:3]:
