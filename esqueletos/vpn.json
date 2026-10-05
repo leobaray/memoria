@@ -1,0 +1,30 @@
+{
+ "tipo": "vpn",
+ "herda": "_base",
+ "campos": {
+  "tecnologia": {
+   "o_que": "OpenVPN / WireGuard",
+   "essencial": false
+  },
+  "porta": {
+   "o_que": "porta e internet por onde entra",
+   "essencial": true
+  },
+  "rede_tunel": {
+   "o_que": "faixa do túnel",
+   "essencial": true
+  },
+  "clientes": {
+   "o_que": "quem conecta",
+   "essencial": false
+  },
+  "senha_no_cofre": {
+   "o_que": "certificados / chaves no cofre",
+   "essencial": false
+  },
+  "skill": {
+   "o_que": "skill com o passo a passo",
+   "essencial": false
+  }
+ }
+}

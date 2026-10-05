@@ -1,0 +1,14 @@
+{
+ "tipo": "aparelho",
+ "herda": "equipamento",
+ "campos": {
+  "para_que": {
+   "o_que": "pra que serve",
+   "essencial": true
+  },
+  "quem_usa": {
+   "o_que": "quem usa",
+   "essencial": true
+  }
+ }
+}

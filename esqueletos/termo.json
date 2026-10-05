@@ -1,0 +1,18 @@
+{
+ "tipo": "termo",
+ "herda": null,
+ "campos": {
+  "quer_dizer": {
+   "o_que": "o que a palavra ou expressão quer dizer",
+   "essencial": true
+  },
+  "quem_usa": {
+   "o_que": "quem fala assim",
+   "essencial": false
+  },
+  "exemplo": {
+   "o_que": "uma frase de exemplo",
+   "essencial": false
+  }
+ }
+}

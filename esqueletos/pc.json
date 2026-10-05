@@ -1,0 +1,30 @@
+{
+ "tipo": "pc",
+ "herda": "equipamento",
+ "campos": {
+  "hostname": {
+   "o_que": "nome do computador no Windows",
+   "essencial": true
+  },
+  "quem_usa": {
+   "o_que": "pessoa",
+   "essencial": true
+  },
+  "sistema": {
+   "o_que": "Windows e versão",
+   "essencial": false
+  },
+  "hardware": {
+   "o_que": "processador, memória, disco",
+   "essencial": false
+  },
+  "antivirus": {
+   "o_que": "antivírus",
+   "essencial": false
+  },
+  "ansible": {
+   "o_que": "nome no inventário do Ansible / como comandar",
+   "essencial": false
+  }
+ }
+}

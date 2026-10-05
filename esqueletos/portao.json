@@ -1,0 +1,26 @@
+{
+ "tipo": "portao",
+ "herda": "_base",
+ "campos": {
+  "como_abrir": {
+   "o_que": "jeito de abrir",
+   "essencial": true
+  },
+  "quem_pode_abrir": {
+   "o_que": "quem pode",
+   "essencial": false
+  },
+  "fecha_sozinho": {
+   "o_que": "fecha sozinho ou precisa de comando",
+   "essencial": false
+  },
+  "interfone": {
+   "o_que": "interfone/ramal ligado",
+   "essencial": false
+  },
+  "motor": {
+   "o_que": "motor/fabricante",
+   "essencial": false
+  }
+ }
+}

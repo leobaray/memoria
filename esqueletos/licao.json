@@ -1,0 +1,18 @@
+{
+ "tipo": "licao",
+ "herda": null,
+ "campos": {
+  "regra": {
+   "o_que": "a regra geral, afirmativa, que vale pra mais de um caso",
+   "essencial": true
+  },
+  "quando_vale": {
+   "o_que": "em que situação lembrar dela",
+   "essencial": true
+  },
+  "quando_nao_vale": {
+   "o_que": "limite: onde a regra não se aplica",
+   "essencial": false
+  }
+ }
+}

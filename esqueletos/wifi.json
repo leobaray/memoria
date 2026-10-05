@@ -1,0 +1,22 @@
+{
+ "tipo": "wifi",
+ "herda": "_base",
+ "campos": {
+  "ssid": {
+   "o_que": "nome da rede",
+   "essencial": true
+  },
+  "transmissor": {
+   "o_que": "aparelho que transmite",
+   "essencial": false
+  },
+  "rede": {
+   "o_que": "faixa de IP / por onde sai",
+   "essencial": false
+  },
+  "senha_no_cofre": {
+   "o_que": "caminho no cofre",
+   "essencial": false
+  }
+ }
+}

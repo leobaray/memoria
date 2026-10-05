@@ -1,0 +1,46 @@
+{
+ "tipo": "equipamento",
+ "herda": "_base",
+ "campos": {
+  "ip": {
+   "o_que": "IP(s) e rede",
+   "essencial": true
+  },
+  "mac": {
+   "o_que": "MAC",
+   "essencial": false
+  },
+  "acesso": {
+   "o_que": "por onde se entra (web, ssh, api) e com qual usuário",
+   "essencial": true
+  },
+  "senha_no_cofre": {
+   "o_que": "CAMINHO no cofre de senhas — nunca o segredo",
+   "essencial": true
+  },
+  "fabricante_modelo": {
+   "o_que": "fabricante e modelo",
+   "essencial": false
+  },
+  "versao": {
+   "o_que": "firmware / versão",
+   "essencial": false
+  },
+  "documentacao_oficial": {
+   "o_que": "links ou a pasta docs/ da memória profunda",
+   "essencial": false
+  },
+  "skill": {
+   "o_que": "skill ti-* com o passo a passo",
+   "essencial": true
+  },
+  "backup": {
+   "o_que": "como e onde está o backup",
+   "essencial": false
+  },
+  "versao_disponivel": {
+   "o_que": "versão mais nova que o fabricante publicou (e quando conferi)",
+   "essencial": false
+  }
+ }
+}

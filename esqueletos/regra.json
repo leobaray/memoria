@@ -1,0 +1,30 @@
+{
+ "tipo": "regra",
+ "herda": null,
+ "campos": {
+  "o_que": {
+   "o_que": "a regra ou combinado do dono, numa frase",
+   "essencial": true
+  },
+  "por_que": {
+   "o_que": "o motivo que ele deu",
+   "essencial": true
+  },
+  "como_aplicar": {
+   "o_que": "o que fazer na prática",
+   "essencial": true
+  },
+  "trava": {
+   "o_que": "o que impede de errar (hook, script, configuração)",
+   "essencial": false
+  },
+  "fonte": {
+   "o_que": "onde mora a versão completa (a regra dura vale a de lá)",
+   "essencial": true
+  },
+  "desde": {
+   "o_que": "quando ele pediu",
+   "essencial": false
+  }
+ }
+}

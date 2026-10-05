@@ -1,0 +1,14 @@
+{
+ "tipo": "lugar",
+ "herda": "_base",
+ "campos": {
+  "cidade": {
+   "o_que": "cidade / endereço",
+   "essencial": false
+  },
+  "como_chega": {
+   "o_que": "como a rede chega lá (VPN, Tailscale…)",
+   "essencial": true
+  }
+ }
+}

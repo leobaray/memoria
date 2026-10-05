@@ -1,0 +1,30 @@
+{
+ "tipo": "servico",
+ "herda": "_base",
+ "campos": {
+  "maquina": {
+   "o_que": "onde roda",
+   "essencial": true
+  },
+  "pasta": {
+   "o_que": "pasta do código",
+   "essencial": false
+  },
+  "como_reiniciar": {
+   "o_que": "comando",
+   "essencial": true
+  },
+  "log": {
+   "o_que": "onde está o log",
+   "essencial": false
+  },
+  "acesso_que_usa": {
+   "o_que": "acessos do cofre que usa",
+   "essencial": false
+  },
+  "skill": {
+   "o_que": "skill com o passo a passo",
+   "essencial": true
+  }
+ }
+}

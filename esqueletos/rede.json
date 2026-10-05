@@ -1,0 +1,18 @@
+{
+ "tipo": "rede",
+ "herda": "_base",
+ "campos": {
+  "faixa": {
+   "o_que": "faixa de IP",
+   "essencial": true
+  },
+  "gateway": {
+   "o_que": "gateway",
+   "essencial": false
+  },
+  "dhcp": {
+   "o_que": "quem entrega IP",
+   "essencial": false
+  }
+ }
+}

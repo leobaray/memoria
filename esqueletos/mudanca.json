@@ -1,0 +1,30 @@
+{
+ "tipo": "mudanca",
+ "herda": null,
+ "campos": {
+  "quando": {
+   "o_que": "data e hora",
+   "essencial": true
+  },
+  "o_que": {
+   "o_que": "o que foi mudado, curto",
+   "essencial": true
+  },
+  "por_que": {
+   "o_que": "motivo",
+   "essencial": true
+  },
+  "desfazer": {
+   "o_que": "como voltar atrás",
+   "essencial": true
+  },
+  "quem_autorizou": {
+   "o_que": "OK do dono, autonomia, ou pedido de alguém",
+   "essencial": false
+  },
+  "verificado": {
+   "o_que": "como conferi que funcionou",
+   "essencial": false
+  }
+ }
+}

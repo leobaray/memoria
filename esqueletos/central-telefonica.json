@@ -1,0 +1,46 @@
+{
+ "tipo": "central-telefonica",
+ "herda": "equipamento",
+ "campos": {
+  "porta_sip": {
+   "o_que": "porta SIP real",
+   "essencial": false
+  },
+  "faixa_rtp": {
+   "o_que": "portas de áudio",
+   "essencial": false
+  },
+  "interface_sip": {
+   "o_que": "por qual interface sai o SIP/áudio",
+   "essencial": false
+  },
+  "ramais_analogicos": {
+   "o_que": "números e onde estão ligados",
+   "essencial": false
+  },
+  "ramais_ip": {
+   "o_que": "números e licenças",
+   "essencial": false
+  },
+  "linhas_externas": {
+   "o_que": "linhas de fora (troncos)",
+   "essencial": false
+  },
+  "quem_atende_ligacoes": {
+   "o_que": "pra onde vai a ligação que chega de fora",
+   "essencial": false
+  },
+  "licencas": {
+   "o_que": "licenças ativas",
+   "essencial": false
+  },
+  "placas": {
+   "o_que": "o que tem em cada encaixe",
+   "essencial": false
+  },
+  "dtmf": {
+   "o_que": "como entende as teclas (RFC 2833, INFO, no áudio)",
+   "essencial": false
+  }
+ }
+}

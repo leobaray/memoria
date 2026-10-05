@@ -1,0 +1,18 @@
+{
+ "tipo": "roteador",
+ "herda": "equipamento",
+ "campos": {
+  "rede_lan": {
+   "o_que": "rede de dentro",
+   "essencial": false
+  },
+  "wan": {
+   "o_que": "de onde vem a internet",
+   "essencial": false
+  },
+  "rotas_importantes": {
+   "o_que": "rotas que não podem sumir",
+   "essencial": false
+  }
+ }
+}

@@ -1,0 +1,5 @@
+# Os dados de quem usa (fichas, diário, estado, config) NUNCA entram neste repositório.
+# Por padrão eles ficam em ~/.memoria ou onde MEMORIA_DADOS apontar; se ficarem aqui dentro, é nesta pasta:
+/dados/
+__pycache__/
+*.pyc

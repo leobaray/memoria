@@ -1,0 +1,18 @@
+{
+ "tipo": "_base",
+ "herda": null,
+ "campos": {
+  "o_que_e": {
+   "o_que": "o que é, numa frase",
+   "essencial": true
+  },
+  "onde_fica": {
+   "o_que": "lugar físico, ou máquina onde roda",
+   "essencial": true
+  },
+  "responsavel": {
+   "o_que": "quem é dono / quem cuida",
+   "essencial": false
+  }
+ }
+}

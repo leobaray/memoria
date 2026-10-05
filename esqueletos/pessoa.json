@@ -1,0 +1,46 @@
+{
+ "tipo": "pessoa",
+ "herda": null,
+ "campos": {
+  "funcao": {
+   "o_que": "o que faz na empresa",
+   "essencial": true
+  },
+  "setor": {
+   "o_que": "setor / lugar",
+   "essencial": false
+  },
+  "pc": {
+   "o_que": "computador",
+   "essencial": false
+  },
+  "ramal": {
+   "o_que": "ramal",
+   "essencial": false
+  },
+  "observacoes": {
+   "o_que": "o que importa saber",
+   "essencial": false
+  },
+  "jeito_de_falar": {
+   "o_que": "como prefere que falem com ele",
+   "essencial": false
+  },
+  "preferencias": {
+   "o_que": "como gosta que as coisas sejam feitas",
+   "essencial": false
+  },
+  "objetivos": {
+   "o_que": "o que quer a médio/longo prazo",
+   "essencial": false
+  },
+  "pessoas_proximas": {
+   "o_que": "família e quem trabalha perto",
+   "essencial": false
+  },
+  "projetos": {
+   "o_que": "projetos dele (detalhe na central dos projetos)",
+   "essencial": false
+  }
+ }
+}

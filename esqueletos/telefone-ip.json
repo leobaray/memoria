@@ -1,0 +1,22 @@
+{
+ "tipo": "telefone-ip",
+ "herda": "equipamento",
+ "campos": {
+  "ramal": {
+   "o_que": "ramal que usa",
+   "essencial": false
+  },
+  "quem_usa": {
+   "o_que": "pessoa",
+   "essencial": false
+  },
+  "dtmf": {
+   "o_que": "modo de tecla configurado",
+   "essencial": false
+  },
+  "codec": {
+   "o_que": "codecs na ordem",
+   "essencial": false
+  }
+ }
+}

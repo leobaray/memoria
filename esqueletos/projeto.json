@@ -1,0 +1,30 @@
+{
+ "tipo": "projeto",
+ "herda": null,
+ "campos": {
+  "o_que_e": {
+   "o_que": "o que é, numa frase",
+   "essencial": true
+  },
+  "onde_fica": {
+   "o_que": "máquina e pasta",
+   "essencial": true
+  },
+  "situacao": {
+   "o_que": "projeto, infra ou arquivado; categoria",
+   "essencial": false
+  },
+  "o_que_ele_quer": {
+   "o_que": "o que o dono quer com o projeto",
+   "essencial": false
+  },
+  "em_que_pe": {
+   "o_que": "em que pé parou",
+   "essencial": false
+  },
+  "link": {
+   "o_que": "ficha na central dos projetos",
+   "essencial": true
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "tipo": "firewall",
+ "herda": "equipamento",
+ "campos": {
+  "interfaces": {
+   "o_que": "interfaces e papéis",
+   "essencial": false
+  },
+  "gateways": {
+   "o_que": "internets e grupos",
+   "essencial": false
+  },
+  "regras_importantes": {
+   "o_que": "regras que não podem sumir",
+   "essencial": false
+  }
+ }
+}

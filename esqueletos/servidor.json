@@ -1,0 +1,18 @@
+{
+ "tipo": "servidor",
+ "herda": "equipamento",
+ "campos": {
+  "sistema": {
+   "o_que": "sistema operacional",
+   "essencial": false
+  },
+  "o_que_roda": {
+   "o_que": "serviços importantes",
+   "essencial": true
+  },
+  "recursos": {
+   "o_que": "CPU, memória, disco",
+   "essencial": false
+  }
+ }
+}

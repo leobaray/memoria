@@ -1,0 +1,30 @@
+{
+ "tipo": "caso",
+ "herda": null,
+ "campos": {
+  "sintoma": {
+   "o_que": "como aparece, nas palavras de quem reclama",
+   "essencial": true
+  },
+  "quando": {
+   "o_que": "data(s)",
+   "essencial": false
+  },
+  "causa": {
+   "o_que": "o que era de verdade",
+   "essencial": true
+  },
+  "jeito_certo": {
+   "o_que": "como resolver (afirmativo, com a fonte)",
+   "essencial": true
+  },
+  "como_conferir": {
+   "o_que": "como saber que voltou",
+   "essencial": true
+  },
+  "desfazer": {
+   "o_que": "como voltar atrás",
+   "essencial": false
+  }
+ }
+}

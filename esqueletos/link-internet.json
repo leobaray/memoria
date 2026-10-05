@@ -1,0 +1,30 @@
+{
+ "tipo": "link-internet",
+ "herda": "_base",
+ "campos": {
+  "operadora": {
+   "o_que": "empresa",
+   "essencial": true
+  },
+  "plano": {
+   "o_que": "velocidade / tipo",
+   "essencial": false
+  },
+  "circuito": {
+   "o_que": "IP público / bloco",
+   "essencial": false
+  },
+  "gateway_pfsense": {
+   "o_que": "nome do gateway no pfSense",
+   "essencial": true
+  },
+  "suporte": {
+   "o_que": "como abrir chamado, contato",
+   "essencial": false
+  },
+  "contrato": {
+   "o_que": "prazo, fidelidade, valor",
+   "essencial": false
+  }
+ }
+}

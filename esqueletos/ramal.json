@@ -1,0 +1,34 @@
+{
+ "tipo": "ramal",
+ "herda": "_base",
+ "campos": {
+  "numero": {
+   "o_que": "número",
+   "essencial": true
+  },
+  "tecnologia": {
+   "o_que": "analógico ou IP",
+   "essencial": true
+  },
+  "porta_fisica": {
+   "o_que": "placa/porta (analógico) ou slot virtual (IP)",
+   "essencial": false
+  },
+  "aparelho_ligado": {
+   "o_que": "o que está pendurado nele",
+   "essencial": true
+  },
+  "pessoa": {
+   "o_que": "quem usa",
+   "essencial": false
+  },
+  "grupo": {
+   "o_que": "grupos de que faz parte",
+   "essencial": false
+  },
+  "senha_registro_no_cofre": {
+   "o_que": "IP: onde está a senha SIP (caminho no cofre ou como ler na central)",
+   "essencial": false
+  }
+ }
+}
